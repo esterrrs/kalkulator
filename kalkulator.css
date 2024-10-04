@@ -1,0 +1,124 @@
+/* General styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #cbd3b7, #f4cccc);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.calculator {
+    background: linear-gradient(to right, #74a5d6, #14183c);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 6px rgba(2, 18, 28, 5);
+    width: 300px;
+    border: solid 3px  #222e53;
+}
+
+.calculator-screen {
+    width: 100%;
+    height: 60px;
+    border: none;
+    background-color: #626161;
+    color: #fff;
+    text-align: right;
+    font-size: 36px;
+    padding: 3px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 10);
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+
+.btn {
+    width: 100%;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+    background: #3c3c3c;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.clear {
+    background-color: #ff1744;
+    color: white;
+    font-weight: bold;
+}
+
+.clear:hover {
+    background-color: #f01440;
+}
+
+.clear:active {
+    background-color: #d50000;
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 kolom */
+    grid-gap: 15px;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn:hover {
+    background-color: #4d4d4d;
+}
+
+.operator {
+    background-color: #0072ff;
+}
+
+.operator:hover {
+    background-color: #0057e7;
+}
+
+.operator:active {
+    background-color: #003b9d;
+}
+
+.btn:nth-child(3),
+.btn:nth-child(7),
+.btn:nth-child(11) {
+    background-color: #ff5722;
+}
+
+.btn:nth-child(3):hover,
+.btn:nth-child(7):hover,
+.btn:nth-child(11):hover {
+    background-color: #e64a19;
+}
+
+.btn:nth-child(3):active,
+.btn:nth-child(7):active,
+.btn:nth-child(11):active {
+    background-color: #bf360c;
+}
+
+.btn:nth-child(14) {
+    background-color: #4caf50;
+}
+
+.btn:nth-child(14):hover {
+    background-color: #43a047;
+}
+
+.btn:nth-child(14):active {
+    background-color: #2e7d32;
+}
